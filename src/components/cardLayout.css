@@ -1,0 +1,63 @@
+
+.card img{
+max-height:50vh;
+opacity:.9;
+border-bottom-left-radius:5%;
+border-bottom-right-radius:5% ;
+border-top-left-radius:5%;
+border-top-right-radius:5% ;
+}
+
+.card {
+    border-top-left-radius:5%;
+border-top-right-radius:5% ;
+    position: absolute;
+	left:25vw;
+	top:10%;
+    width:50vw;
+    min-height:80vh;
+font-size:15px;
+color: rgba(255, 255, 255);
+background-color: rgba(0, 0, 0,.5);
+text-align: center;
+margin-bottom:-10em;
+}
+.card-body{
+    
+    border-top-left-radius:10%;
+    border-top-right-radius:10%;
+}
+.card {
+    animation-name: my-animation;
+    animation-duration:.6s;  
+    animation-iteration-count:initial; 
+}
+
+@media (min-width: 319px) and (max-width:641px) {
+ .card{
+position:absolute;
+left:0;;
+width:100vw;
+ }
+  }
+  
+  @keyframes my-animation { /* al definir los keyframes de la animación también la otorgamos un nombre*/
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: .1;
+    }
+    25% {
+        opacity: .2;
+    }
+    45% {
+        opacity: .4;
+    }
+    75% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+    }
+}

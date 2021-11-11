@@ -5,6 +5,8 @@ import CardLayout from "./components/CardLayout.jsx";
 import Member  from "./components/Member.jsx";
 import Historia from "./components/Historia.jsx"
 import Disk from "./components/Disk.jsx"
+import Background from "./components/Background.jsx"
+import fondo from "./img/fondo_back.mp4"
 function App() {
   return (
     <div>
@@ -29,7 +31,7 @@ function App() {
           </Route>
           <Route path="/">
             <div>
-  
+    <Background url={fondo}/>
           </div>
           </Route>
         </Switch>

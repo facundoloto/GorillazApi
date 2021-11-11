@@ -4,7 +4,9 @@ import CardLayout from './CardLayout';
 function Character(){
 const {id}=useParams()
 console.log(id)
+
 const [Data,setData]=useState([])
+try{
 useEffect(()=>{
 getMemberApi()
 },[])
@@ -14,5 +16,8 @@ const getMemberApi= async ()=>{
     setData(DataJson)
   }
   return (Data)
+}catch(err){
+
+}
 }
 export default Character;

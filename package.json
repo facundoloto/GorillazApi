@@ -1,5 +1,4 @@
 {
-   "homepage": "https://github.com/facundoloto/GorillazApi",
    "name": "app",
    "version": "0.1.0",
    "private": true,
@@ -20,8 +19,6 @@
       "web-vitals": "^1.1.2"
    },
    "scripts": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d build",
       "start": "react-scripts --openssl-legacy-provider start",
       "test": "react-scripts test",
       "eject": "react-scripts eject"

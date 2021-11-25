@@ -5,7 +5,7 @@ import {Card,Row,Col} from 'react-bootstrap'
 import Character from './Character'
 
 
-function CardLayout(){ //Data is prop of the component CardMembers
+function CardLayout(ruta){ //Data is prop of the component CardMembers
 /*<div className="card mb-3">
   <img className="card-img-top" src={Data.url_imagen} alt="Card image cap"/>
   <div className="card-body">
@@ -18,10 +18,12 @@ function CardLayout(){ //Data is prop of the component CardMembers
   </div>
 </div>
 </div>*/
-  let Data=Character()
+
+
+  let Data=Character(ruta.ruta)
   console.log(Data)  
   return(
-    <div className="position">
+    <div className="position container-fluid">
       {
       Data.map(function(Data){
         return(

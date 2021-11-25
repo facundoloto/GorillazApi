@@ -1,7 +1,7 @@
 import { useParams } from 'react-router';
 import { useState,useEffect } from 'react';
-import CardLayout from './CardLayout';
-function Character(){
+function Character(ruta){
+
 const {id}=useParams()
 console.log(id)
 
@@ -11,8 +11,10 @@ useEffect(()=>{
 getMemberApi()
 },[])
 const getMemberApi= async ()=>{
-    const DataMember=await fetch(`http://app-b869980c-2c89-4f3d-b005-99fa43dc174e.cleverapps.io/apigorillaz/v1/miembros/${id}`)
+  console.log(ruta)
+    const DataMember=await fetch(`http://app-b869980c-2c89-4f3d-b005-99fa43dc174e.cleverapps.io/apigorillaz/v1/${ruta}/${id}`)
     const DataJson=await DataMember.json()
+    console.log(DataJson)
     setData(DataJson)
   }
   return (Data)

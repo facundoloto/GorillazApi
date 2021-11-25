@@ -1,7 +1,6 @@
 body{
 background-color: #FF9A8B;
 background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-
 width:100vw;
 height:100vh;
 }
@@ -16,18 +15,6 @@ text-transform: uppercase;
 color: white !important;
 }
 
-.Title{
-
-
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-
-}
-.Title img{
-width:400px;
-}
 .video-background{
 position:fixed;
 width:100vw;

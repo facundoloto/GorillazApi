@@ -12,8 +12,8 @@ return(
 <Nav.Link href={"/"}>Home</Nav.Link>
 <Nav.Link href={"/member/"}>Miembros</Nav.Link>
 <Nav.Link href={"/historia/"}>Historia</Nav.Link>
-<Nav.Link href={"/disk"}>Discografia</Nav.Link>
 <Nav.Link href={"/fases/"}>Fases</Nav.Link>
+<Nav.Link href={"/disk"}>Discografia</Nav.Link>
 </Nav>
 </Navbar.Collapse>
 </Container>

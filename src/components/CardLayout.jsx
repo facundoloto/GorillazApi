@@ -6,21 +6,7 @@ import Character from './Character'
 
 
 function CardLayout(ruta){ //Data is prop of the component CardMembers
-/*<div className="card mb-3">
-  <img className="card-img-top" src={Data.url_imagen} alt="Card image cap"/>
-  <div className="card-body">
-    <h3 className="card-title">{Data.nombre}</h3>
-    <p className="card-text">{Data.about}</p>
-    <p className="card-text"><large className="text-muted">Fecha Nacimiento:{Data.fecha_nacimiento}</large></p>
-    <p className="card-text"><large className="text-muted">Lugar Nacimiento:{Data.lugar_nacimiento}</large></p>
-    <p className="card-text"><large className="text-muted">Ocupacion:{Data.ocupacion}</large></p>
-    <p className="card-text"><large className="text-muted">Actividad:{Data.actividad}</large></p>
-  </div>
-</div>
-</div>*/
-
-
-  let Data=Character(ruta.ruta)
+let Data=Character(ruta.ruta)
   console.log(Data)  
   return(
     <div className="position container-fluid">
@@ -34,6 +20,10 @@ function CardLayout(ruta){ //Data is prop of the component CardMembers
         <Card.Text>
         {Data.about}
     </Card.Text>
+    <p className="card-text"><large className="text-muted">Fecha Nacimiento:{Data.fecha_nacimiento}</large></p>
+    <p className="card-text"><large className="text-muted">Lugar Nacimiento:{Data.lugar_nacimiento}</large></p>
+    <p className="card-text"><large className="text-muted">Ocupacion:{Data.ocupacion}</large></p>
+    <p className="card-text"><large className="text-muted">Actividad:{Data.actividad}</large></p>
         </Card.Body>
       </Card>
         )

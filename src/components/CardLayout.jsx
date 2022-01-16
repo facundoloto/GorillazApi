@@ -18,7 +18,7 @@ let Data=Character(ruta.ruta)
         <Card.Body>
         <Card.Title>{Data.nombre}</Card.Title>
         <Card.Text>
-        {Data.about}
+        {Data.biografia}
     </Card.Text>
     <p className="card-text"><large className="text-muted">Fecha Nacimiento:{Data.fecha_nacimiento}</large></p>
     <p className="card-text"><large className="text-muted">Lugar Nacimiento:{Data.lugar_nacimiento}</large></p>
